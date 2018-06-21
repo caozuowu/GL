@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>c1_2 copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>c1_2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,7 +32,7 @@
 		<key>c2_1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>c_1.xcscheme</key>
 		<dict>
@@ -79,6 +84,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>ct.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>ctest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -102,7 +112,7 @@
 		<key>test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>trangles.xcscheme</key>
 		<dict>
