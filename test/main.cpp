@@ -52,7 +52,7 @@ int main(int argc, const char * argv[]) {
         //处理输入时间
         processInput(window);
         //渲染
-        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        glClearColor(1.0f, 1.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
         glfwSwapBuffers(window);
