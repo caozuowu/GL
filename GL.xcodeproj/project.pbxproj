@@ -14,6 +14,11 @@
 		E99A6E3E20DC94D900E17145 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
 		E99A6E4F20DC9B4F00E17145 /* c1_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */; };
 		E9A6ADEC20DC9CD400776EE0 /* c2_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */; };
+		E9A6AE0020DCD5CC00776EE0 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
+		E9A6AE0120DCD5F500776EE0 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9841D2C20DBA27F00FF0C84 /* libglfw.3.2.dylib */; };
+		E9A6AE0220DCD5FF00776EE0 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9841D3420DBBAAE00FF0C84 /* libGLEW.2.1.0.dylib */; };
+		E9A6AE0320DCD60500776EE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
+		E9A6AE1120DCDFD700776EE0 /* c3_element_caching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +32,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		E9A6ADE320DC9CC200776EE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E9A6AE0620DCDFB000776EE0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -52,6 +66,8 @@
 		E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c1_window.cpp; sourceTree = "<group>"; };
 		E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c2_triangle.cpp; sourceTree = "<group>"; };
 		E9A6ADE520DC9CC200776EE0 /* c2_triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c2_triangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A6AE0820DCDFB000776EE0 /* c3_element_caching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c3_element_caching; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_element_caching.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E9A6ADE220DC9CC200776EE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A6AE0320DCD60500776EE0 /* OpenGL.framework in Frameworks */,
+				E9A6AE0220DCD5FF00776EE0 /* libGLEW.2.1.0.dylib in Frameworks */,
+				E9A6AE0120DCD5F500776EE0 /* libglfw.3.2.dylib in Frameworks */,
+				E9A6AE0020DCD5CC00776EE0 /* libglad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A6AE0520DCDFB000776EE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,6 +127,7 @@
 				E9841D1D20DB945B00FF0C84 /* c1_window */,
 				E99A6E2D20DC935300E17145 /* libglad.a */,
 				E9A6ADE520DC9CC200776EE0 /* c2_triangle */,
+				E9A6AE0820DCDFB000776EE0 /* c3_element_caching */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +191,7 @@
 			children = (
 				E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */,
 				E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */,
+				E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -231,6 +260,23 @@
 			productReference = E9A6ADE520DC9CC200776EE0 /* c2_triangle */;
 			productType = "com.apple.product-type.tool";
 		};
+		E9A6AE0720DCDFB000776EE0 /* c3_element_caching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9A6AE0C20DCDFB000776EE0 /* Build configuration list for PBXNativeTarget "c3_element_caching" */;
+			buildPhases = (
+				E9A6AE0420DCDFB000776EE0 /* Sources */,
+				E9A6AE0520DCDFB000776EE0 /* Frameworks */,
+				E9A6AE0620DCDFB000776EE0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = c3_element_caching;
+			productName = c3_ElementCaching;
+			productReference = E9A6AE0820DCDFB000776EE0 /* c3_element_caching */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +298,10 @@
 						CreatedOnToolsVersion = 9.4;
 						ProvisioningStyle = Automatic;
 					};
+					E9A6AE0720DCDFB000776EE0 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E95AB0342032BAE800DCF3C8 /* Build configuration list for PBXProject "GL" */;
@@ -269,6 +319,7 @@
 				E99A6E2C20DC935300E17145 /* glad */,
 				E9841D1C20DB945B00FF0C84 /* c1_window */,
 				E9A6ADE420DC9CC200776EE0 /* c2_triangle */,
+				E9A6AE0720DCDFB000776EE0 /* c3_element_caching */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +346,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A6ADEC20DC9CD400776EE0 /* c2_triangle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A6AE0420DCDFB000776EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A6AE1120DCDFD700776EE0 /* c3_element_caching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +408,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -400,8 +459,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -506,6 +565,34 @@
 			};
 			name = Release;
 		};
+		E9A6AE0D20DCDFB000776EE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9A6AE0E20DCDFB000776EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +628,15 @@
 			buildConfigurations = (
 				E9A6ADEA20DC9CC200776EE0 /* Debug */,
 				E9A6ADEB20DC9CC200776EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9A6AE0C20DCDFB000776EE0 /* Build configuration list for PBXNativeTarget "c3_element_caching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A6AE0D20DCDFB000776EE0 /* Debug */,
+				E9A6AE0E20DCDFB000776EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

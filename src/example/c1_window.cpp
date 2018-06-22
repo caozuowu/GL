@@ -1,6 +1,6 @@
 //
 //  c1_window.cpp
-//  GL
+//  c1_window
 //
 //  Created by zuowu on 2018/6/21.
 //  Copyright © 2018年 zuowu. All rights reserved.
