@@ -19,6 +19,10 @@
 		E9A6AE0220DCD5FF00776EE0 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9841D3420DBBAAE00FF0C84 /* libGLEW.2.1.0.dylib */; };
 		E9A6AE0320DCD60500776EE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
 		E9A6AE1120DCDFD700776EE0 /* c3_element_caching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */; };
+		E9A6AE1220DCEC1400776EE0 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
+		E9A6AE1320DCEC2F00776EE0 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9841D3420DBBAAE00FF0C84 /* libGLEW.2.1.0.dylib */; };
+		E9A6AE1420DCEC3B00776EE0 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9841D2C20DBA27F00FF0C84 /* libglfw.3.2.dylib */; };
+		E9A6AE1520DCEC4500776EE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A6AE1520DCEC4500776EE0 /* OpenGL.framework in Frameworks */,
+				E9A6AE1420DCEC3B00776EE0 /* libglfw.3.2.dylib in Frameworks */,
+				E9A6AE1320DCEC2F00776EE0 /* libGLEW.2.1.0.dylib in Frameworks */,
+				E9A6AE1220DCEC1400776EE0 /* libglad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
