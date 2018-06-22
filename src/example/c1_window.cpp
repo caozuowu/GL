@@ -1,6 +1,6 @@
 //
-//  main.cpp
-//  test
+//  c1_window.cpp
+//  GL
 //
 //  Created by zuowu on 2018/6/21.
 //  Copyright © 2018年 zuowu. All rights reserved.
@@ -22,14 +22,18 @@ void processInput(GLFWwindow * window) {
 }
 
 
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
+    
+    std::cout<<"chapter 1 window"<<std::endl;
     
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);                 //OpenGL主版本号
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);                 //OpenGL子版本号
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //使用OpenGL核心模式(可编程渲染管道)
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);           //设定兼容性
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);           //设定兼容性 MacOS
+#endif
 
     GLFWwindow * window = glfwCreateWindow(1280, 7200, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
