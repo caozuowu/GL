@@ -1,2 +1,4 @@
-book/
+﻿book/
+#windows 忽略文件
 Debug
+proj.win.sdf
