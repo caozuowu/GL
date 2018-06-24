@@ -1,6 +1,6 @@
 ### README
 
-#### [连接](https://www.jianshu.com/p/6bda18e953f6)
+#### [教程连接](https://www.jianshu.com/p/6bda18e953f6)
 
 #### install glew & glfw on MacOS
  * [glew](http://glew.sourceforge.net)
