@@ -154,10 +154,10 @@ typedef unsigned int GLhandleARB;
 typedef unsigned short GLhalfARB;
 typedef unsigned short GLhalf;
 typedef GLint GLfixed;
-#ifdef _WIN32
+
 typedef khronos_intptr_t GLintptr;
 typedef khronos_ssize_t GLsizeiptr;
-#endif
+
 typedef int64_t GLint64;
 typedef uint64_t GLuint64;
 #if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)

@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC0DE32720DD4C98002AF617 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32620DD4C98002AF617 /* libglfw3.a */; };
 		BC0DE32920DD4D45002AF617 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32820DD4D45002AF617 /* Cocoa.framework */; };
 		BC0DE32B20DD4D59002AF617 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32A20DD4D59002AF617 /* IOKit.framework */; };
 		BC0DE32D20DD4D79002AF617 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */; };
 		BC0DE32E20DD4DBE002AF617 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32820DD4D45002AF617 /* Cocoa.framework */; };
-		BC0DE32F20DD4DEC002AF617 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32620DD4C98002AF617 /* libglfw3.a */; };
 		BC0DE33020DD4DF9002AF617 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32A20DD4D59002AF617 /* IOKit.framework */; };
 		BC0DE33120DD4E08002AF617 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */; };
 		BC0DE33220DD4E28002AF617 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */; };
 		BC0DE33320DD4E2E002AF617 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32820DD4D45002AF617 /* Cocoa.framework */; };
 		BC0DE33420DD4E33002AF617 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32A20DD4D59002AF617 /* IOKit.framework */; };
-		BC0DE33520DD4E3E002AF617 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32620DD4C98002AF617 /* libglfw3.a */; };
+		E9811D2B20E084180055EC5A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = E9811D2A20E084180055EC5A /* glad.c */; };
+		E9811D3A20E0855C0055EC5A /* c1_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D3520E084240055EC5A /* c1_window.cpp */; };
+		E9811D3B20E085DF0055EC5A /* c2_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D3420E084240055EC5A /* c2_triangle.cpp */; };
+		E9811D3C20E085EA0055EC5A /* c3_element_caching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D3920E084240055EC5A /* c3_element_caching.cpp */; };
+		E9811D3E20E0866A0055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
+		E9811D3F20E086800055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
+		E9811D4020E0868D0055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
 		E9841D2420DB954B00FF0C84 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
-		E99A6E3C20DC940E00E17145 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = E99A6E3A20DC940E00E17145 /* glad.c */; };
 		E99A6E3E20DC94D900E17145 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
-		E99A6E4F20DC9B4F00E17145 /* c1_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */; };
-		E9A6ADEC20DC9CD400776EE0 /* c2_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */; };
 		E9A6AE0020DCD5CC00776EE0 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
 		E9A6AE0320DCD60500776EE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
-		E9A6AE1120DCDFD700776EE0 /* c3_element_caching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */; };
 		E9A6AE1220DCEC1400776EE0 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
 		E9A6AE1520DCEC4500776EE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
@@ -62,25 +62,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BC0DE32320DD4515002AF617 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = library/lib/libGLEW.a; sourceTree = "<group>"; };
-		BC0DE32620DD4C98002AF617 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = library/lib/libglfw3.a; sourceTree = "<group>"; };
 		BC0DE32820DD4D45002AF617 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BC0DE32A20DD4D59002AF617 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E95AB0442032BBA700DCF3C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E95AB0462032BBAD00DCF3C8 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		E9811D2A20E084180055EC5A /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		E9811D2F20E084240055EC5A /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
+		E9811D3020E084240055EC5A /* double.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = double.cpp; sourceTree = "<group>"; };
+		E9811D3220E084240055EC5A /* mvarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mvarray.cpp; sourceTree = "<group>"; };
+		E9811D3420E084240055EC5A /* c2_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c2_triangle.cpp; sourceTree = "<group>"; };
+		E9811D3520E084240055EC5A /* c1_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c1_window.cpp; sourceTree = "<group>"; };
+		E9811D3720E084240055EC5A /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		E9811D3820E084240055EC5A /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		E9811D3920E084240055EC5A /* c3_element_caching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_element_caching.cpp; sourceTree = "<group>"; };
+		E9811D3D20E0866A0055EC5A /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../library/lib/libglfw3.a; sourceTree = "<group>"; };
 		E9841D1D20DB945B00FF0C84 /* c1_window */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c1_window; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9841D2520DB96C300FF0C84 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E99A6E2D20DC935300E17145 /* libglad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E99A6E3A20DC940E00E17145 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		E99A6E4820DC9AAE00E17145 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
-		E99A6E4920DC9AAE00E17145 /* double.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = double.cpp; sourceTree = "<group>"; };
-		E99A6E4B20DC9AAE00E17145 /* mvarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mvarray.cpp; sourceTree = "<group>"; };
-		E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c1_window.cpp; sourceTree = "<group>"; };
-		E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c2_triangle.cpp; sourceTree = "<group>"; };
 		E9A6ADE520DC9CC200776EE0 /* c2_triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c2_triangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A6AE0820DCDFB000776EE0 /* c3_element_caching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c3_element_caching; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_element_caching.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9811D3E20E0866A0055EC5A /* libglfw3.a in Frameworks */,
 				BC0DE32D20DD4D79002AF617 /* CoreVideo.framework in Frameworks */,
 				BC0DE32B20DD4D59002AF617 /* IOKit.framework in Frameworks */,
 				BC0DE32920DD4D45002AF617 /* Cocoa.framework in Frameworks */,
-				BC0DE32720DD4C98002AF617 /* libglfw3.a in Frameworks */,
 				E99A6E3E20DC94D900E17145 /* libglad.a in Frameworks */,
 				E9841D2420DB954B00FF0C84 /* OpenGL.framework in Frameworks */,
 			);
@@ -108,9 +108,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9811D3F20E086800055EC5A /* libglfw3.a in Frameworks */,
 				BC0DE33120DD4E08002AF617 /* CoreVideo.framework in Frameworks */,
 				BC0DE33020DD4DF9002AF617 /* IOKit.framework in Frameworks */,
-				BC0DE32F20DD4DEC002AF617 /* libglfw3.a in Frameworks */,
 				BC0DE32E20DD4DBE002AF617 /* Cocoa.framework in Frameworks */,
 				E9A6AE0320DCD60500776EE0 /* OpenGL.framework in Frameworks */,
 				E9A6AE0020DCD5CC00776EE0 /* libglad.a in Frameworks */,
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0DE33520DD4E3E002AF617 /* libglfw3.a in Frameworks */,
+				E9811D4020E0868D0055EC5A /* libglfw3.a in Frameworks */,
 				BC0DE33420DD4E33002AF617 /* IOKit.framework in Frameworks */,
 				BC0DE33320DD4E2E002AF617 /* Cocoa.framework in Frameworks */,
 				BC0DE33220DD4E28002AF617 /* CoreVideo.framework in Frameworks */,
@@ -136,9 +136,8 @@
 		E95AB0302032BAE800DCF3C8 = {
 			isa = PBXGroup;
 			children = (
-				E9841D2520DB96C300FF0C84 /* README.md */,
-				E99A6E3920DC93F700E17145 /* glad */,
-				E99A6E3F20DC9A6900E17145 /* src */,
+				E9811D2920E084180055EC5A /* glad */,
+				E9811D2C20E084240055EC5A /* src */,
 				E95AB03A2032BAE800DCF3C8 /* Products */,
 				E95AB0432032BBA700DCF3C8 /* Frameworks */,
 			);
@@ -158,68 +157,79 @@
 		E95AB0432032BBA700DCF3C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9811D3D20E0866A0055EC5A /* libglfw3.a */,
 				BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */,
 				BC0DE32A20DD4D59002AF617 /* IOKit.framework */,
 				BC0DE32820DD4D45002AF617 /* Cocoa.framework */,
-				BC0DE32620DD4C98002AF617 /* libglfw3.a */,
-				BC0DE32320DD4515002AF617 /* libGLEW.a */,
 				E95AB0462032BBAD00DCF3C8 /* GLUT.framework */,
 				E95AB0442032BBA700DCF3C8 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E99A6E3920DC93F700E17145 /* glad */ = {
+		E9811D2920E084180055EC5A /* glad */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E3A20DC940E00E17145 /* glad.c */,
+				E9811D2A20E084180055EC5A /* glad.c */,
 			);
-			path = glad;
+			name = glad;
+			path = ../glad;
 			sourceTree = "<group>";
 		};
-		E99A6E3F20DC9A6900E17145 /* src */ = {
+		E9811D2C20E084240055EC5A /* src */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E4C20DC9B3C00E17145 /* example */,
-				E99A6E4620DC9AAE00E17145 /* test */,
+				E9811D2D20E084240055EC5A /* test */,
+				E9811D3320E084240055EC5A /* example */,
 			);
-			path = src;
+			name = src;
+			path = ../src;
 			sourceTree = "<group>";
 		};
-		E99A6E4620DC9AAE00E17145 /* test */ = {
+		E9811D2D20E084240055EC5A /* test */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E4720DC9AAE00E17145 /* c1 */,
-				E99A6E4A20DC9AAE00E17145 /* c2 */,
+				E9811D2E20E084240055EC5A /* c1 */,
+				E9811D3120E084240055EC5A /* c2 */,
 			);
 			path = test;
 			sourceTree = "<group>";
 		};
-		E99A6E4720DC9AAE00E17145 /* c1 */ = {
+		E9811D2E20E084240055EC5A /* c1 */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E4820DC9AAE00E17145 /* hello.cpp */,
-				E99A6E4920DC9AAE00E17145 /* double.cpp */,
+				E9811D2F20E084240055EC5A /* hello.cpp */,
+				E9811D3020E084240055EC5A /* double.cpp */,
 			);
 			path = c1;
 			sourceTree = "<group>";
 		};
-		E99A6E4A20DC9AAE00E17145 /* c2 */ = {
+		E9811D3120E084240055EC5A /* c2 */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E4B20DC9AAE00E17145 /* mvarray.cpp */,
+				E9811D3220E084240055EC5A /* mvarray.cpp */,
 			);
 			path = c2;
 			sourceTree = "<group>";
 		};
-		E99A6E4C20DC9B3C00E17145 /* example */ = {
+		E9811D3320E084240055EC5A /* example */ = {
 			isa = PBXGroup;
 			children = (
-				E99A6E4E20DC9B3C00E17145 /* c1_window.cpp */,
-				E9A6ADE020DC9CA300776EE0 /* c2_triangle.cpp */,
-				E9A6AE0F20DCDFD700776EE0 /* c3_element_caching.cpp */,
+				E9811D3420E084240055EC5A /* c2_triangle.cpp */,
+				E9811D3520E084240055EC5A /* c1_window.cpp */,
+				E9811D3620E084240055EC5A /* c4_shader */,
+				E9811D3920E084240055EC5A /* c3_element_caching.cpp */,
 			);
 			path = example;
+			sourceTree = "<group>";
+		};
+		E9811D3620E084240055EC5A /* c4_shader */ = {
+			isa = PBXGroup;
+			children = (
+				E9811D3720E084240055EC5A /* Shader.h */,
+				E9811D3820E084240055EC5A /* Shader.cpp */,
+			);
+			path = c4_shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99A6E4F20DC9B4F00E17145 /* c1_window.cpp in Sources */,
+				E9811D3A20E0855C0055EC5A /* c1_window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99A6E3C20DC940E00E17145 /* glad.c in Sources */,
+				E9811D2B20E084180055EC5A /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A6ADEC20DC9CD400776EE0 /* c2_triangle.cpp in Sources */,
+				E9811D3B20E085DF0055EC5A /* c2_triangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A6AE1120DCDFD700776EE0 /* c3_element_caching.cpp in Sources */,
+				E9811D3C20E085EA0055EC5A /* c3_element_caching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +444,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -485,8 +495,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -502,8 +512,8 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC2EQSWR8C;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -518,8 +528,8 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC2EQSWR8C;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/library/lib";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -537,7 +547,8 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -556,7 +567,8 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/library/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../library/include";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../library/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
