@@ -23,6 +23,17 @@
 		E9811D3E20E0866A0055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
 		E9811D3F20E086800055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
 		E9811D4020E0868D0055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
+		E9811D4C20E0881E0055EC5A /* Shader.h in Sources */ = {isa = PBXBuildFile; fileRef = E9811D3720E084240055EC5A /* Shader.h */; };
+		E9811D4D20E0881E0055EC5A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D3820E084240055EC5A /* Shader.cpp */; };
+		E9811D4E20E0883B0055EC5A /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
+		E9811D5220E0A1550055EC5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D5120E0A1550055EC5A /* main.cpp */; };
+		E9811D5320E0A1550055EC5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9811D5120E0A1550055EC5A /* main.cpp */; };
+		E9811D5620E0C29C0055EC5A /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9811D3D20E0866A0055EC5A /* libglfw3.a */; };
+		E9811D5720E0C2AE0055EC5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32820DD4D45002AF617 /* Cocoa.framework */; };
+		E9811D5820E0C2B60055EC5A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32C20DD4D79002AF617 /* CoreVideo.framework */; };
+		E9811D5920E0C2BB0055EC5A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0DE32A20DD4D59002AF617 /* IOKit.framework */; };
+		E9811E3820E0E4150055EC5A /* ch4 in Resources */ = {isa = PBXBuildFile; fileRef = E9811E3720E0E4150055EC5A /* ch4 */; };
+		E9811E3920E0E4220055EC5A /* ch4 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9811E3720E0E4150055EC5A /* ch4 */; };
 		E9841D2420DB954B00FF0C84 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95AB0442032BBA700DCF3C8 /* OpenGL.framework */; };
 		E99A6E3E20DC94D900E17145 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
 		E9A6AE0020DCD5CC00776EE0 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99A6E2D20DC935300E17145 /* libglad.a */; };
@@ -32,6 +43,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E9811D4320E0880C0055EC5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				E9811E3920E0E4220055EC5A /* ch4 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9841D1B20DB945B00FF0C84 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +98,11 @@
 		E9811D3820E084240055EC5A /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		E9811D3920E084240055EC5A /* c3_element_caching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = c3_element_caching.cpp; sourceTree = "<group>"; };
 		E9811D3D20E0866A0055EC5A /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../library/lib/libglfw3.a; sourceTree = "<group>"; };
+		E9811D4520E0880C0055EC5A /* c4_shader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c4_shader; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9811D4F20E088D40055EC5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E9811D5020E094E10055EC5A /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
+		E9811D5120E0A1550055EC5A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E9811E3720E0E4150055EC5A /* ch4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ch4; sourceTree = "<group>"; };
 		E9841D1D20DB945B00FF0C84 /* c1_window */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c1_window; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99A6E2D20DC935300E17145 /* libglad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A6ADE520DC9CC200776EE0 /* c2_triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c2_triangle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +110,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E9811D4220E0880C0055EC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9811D5920E0C2BB0055EC5A /* IOKit.framework in Frameworks */,
+				E9811D5820E0C2B60055EC5A /* CoreVideo.framework in Frameworks */,
+				E9811D5720E0C2AE0055EC5A /* Cocoa.framework in Frameworks */,
+				E9811D5620E0C29C0055EC5A /* libglfw3.a in Frameworks */,
+				E9811D4E20E0883B0055EC5A /* libglad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9841D1A20DB945B00FF0C84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +174,8 @@
 		E95AB0302032BAE800DCF3C8 = {
 			isa = PBXGroup;
 			children = (
+				E9811D4F20E088D40055EC5A /* README.md */,
+				E9811D6F20E0CE7E0055EC5A /* Resources */,
 				E9811D2920E084180055EC5A /* glad */,
 				E9811D2C20E084240055EC5A /* src */,
 				E95AB03A2032BAE800DCF3C8 /* Products */,
@@ -150,6 +190,7 @@
 				E99A6E2D20DC935300E17145 /* libglad.a */,
 				E9A6ADE520DC9CC200776EE0 /* c2_triangle */,
 				E9A6AE0820DCDFB000776EE0 /* c3_element_caching */,
+				E9811D4520E0880C0055EC5A /* c4_shader */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,10 +256,11 @@
 		E9811D3320E084240055EC5A /* example */ = {
 			isa = PBXGroup;
 			children = (
-				E9811D3420E084240055EC5A /* c2_triangle.cpp */,
+				E9811D6B20E0CC9A0055EC5A /* tool */,
 				E9811D3520E084240055EC5A /* c1_window.cpp */,
-				E9811D3620E084240055EC5A /* c4_shader */,
+				E9811D3420E084240055EC5A /* c2_triangle.cpp */,
 				E9811D3920E084240055EC5A /* c3_element_caching.cpp */,
+				E9811D3620E084240055EC5A /* c4_shader */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -226,10 +268,28 @@
 		E9811D3620E084240055EC5A /* c4_shader */ = {
 			isa = PBXGroup;
 			children = (
+				E9811E3720E0E4150055EC5A /* ch4 */,
 				E9811D3720E084240055EC5A /* Shader.h */,
 				E9811D3820E084240055EC5A /* Shader.cpp */,
+				E9811D5020E094E10055EC5A /* note.md */,
+				E9811D5120E0A1550055EC5A /* main.cpp */,
 			);
 			path = c4_shader;
+			sourceTree = "<group>";
+		};
+		E9811D6B20E0CC9A0055EC5A /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		E9811D6F20E0CE7E0055EC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +305,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E9811D4420E0880C0055EC5A /* c4_shader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9811D4920E0880C0055EC5A /* Build configuration list for PBXNativeTarget "c4_shader" */;
+			buildPhases = (
+				E9811D4120E0880C0055EC5A /* Sources */,
+				E9811D4220E0880C0055EC5A /* Frameworks */,
+				E9811D4320E0880C0055EC5A /* CopyFiles */,
+				E9811E2C20E0D6780055EC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = c4_shader;
+			productName = c4_shader;
+			productReference = E9811D4520E0880C0055EC5A /* c4_shader */;
+			productType = "com.apple.product-type.tool";
+		};
 		E9841D1C20DB945B00FF0C84 /* c1_window */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9841D2120DB945B00FF0C84 /* Build configuration list for PBXNativeTarget "c1_window" */;
@@ -319,9 +397,16 @@
 		E95AB0312032BAE800DCF3C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = zuowu;
 				TargetAttributes = {
+					E9811D4420E0880C0055EC5A = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
 					E9841D1C20DB945B00FF0C84 = {
 						CreatedOnToolsVersion = 9.4;
 						ProvisioningStyle = Automatic;
@@ -346,6 +431,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E95AB0302032BAE800DCF3C8;
 			productRefGroup = E95AB03A2032BAE800DCF3C8 /* Products */;
@@ -356,11 +442,33 @@
 				E9841D1C20DB945B00FF0C84 /* c1_window */,
 				E9A6ADE420DC9CC200776EE0 /* c2_triangle */,
 				E9A6AE0720DCDFB000776EE0 /* c3_element_caching */,
+				E9811D4420E0880C0055EC5A /* c4_shader */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E9811E2C20E0D6780055EC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9811E3820E0E4150055EC5A /* ch4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E9811D4120E0880C0055EC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9811D4C20E0881E0055EC5A /* Shader.h in Sources */,
+				E9811D4D20E0881E0055EC5A /* Shader.cpp in Sources */,
+				E9811D5320E0A1550055EC5A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9841D1920DB945B00FF0C84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9811D5220E0A1550055EC5A /* main.cpp in Sources */,
 				E9811D2B20E084180055EC5A /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +609,36 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E9811D4A20E0880C0055EC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9811D4B20E0880C0055EC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -639,6 +778,15 @@
 			buildConfigurations = (
 				E95AB03E2032BAE800DCF3C8 /* Debug */,
 				E95AB03F2032BAE800DCF3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9811D4920E0880C0055EC5A /* Build configuration list for PBXNativeTarget "c4_shader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9811D4A20E0880C0055EC5A /* Debug */,
+				E9811D4B20E0880C0055EC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
