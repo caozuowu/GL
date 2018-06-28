@@ -11,7 +11,7 @@
 #include <glad/glad.h>
 #include "Shader.h"
 #define STB_IMAGE_IMPLEMENTATION
-#include <std-master/stb_image.h>
+#include <stb-master/stb_image.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
@@ -81,10 +81,10 @@ int main(int argc, const char * argv[]){
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     //颜色数据    中间三个
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
     //纹理数据    最后三个
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6*sizeof(float)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
     
     unsigned int EBO;
@@ -104,6 +104,8 @@ int main(int argc, const char * argv[]){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);                   //放大 双线性过滤
     
     int width, height, nrChannels;   //纹理属性  宽,高,颜色通道
+    //OpenGL期待原点（0,0）位于左下角,而通常一张图片的原点位于左上角,stb库早就已经为我们准备了解决方案 解决上下颠倒
+    stbi_set_flip_vertically_on_load(true);
     //读取图片
     unsigned char * data = stbi_load("ch5/beauty.jpg", &width, &height, &nrChannels, 0);
     if (data) {
@@ -115,8 +117,9 @@ int main(int argc, const char * argv[]){
          * 参数六：一定要设置成0（有一些遗留的工作）
          * 参数七和参数八：源图片的格式和数据类型。我们加载的图片中有RGB值，并且以字节的方式保存。所以我们传递了这两个参数。
          * 参数九：加载的图片数据
+         * 参数写错 黑图....
          */
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNALED, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
         //创建mipmap
         glGenerateMipmap(GL_TEXTURE_2D);
     }else {
