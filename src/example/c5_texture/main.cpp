@@ -10,8 +10,8 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 #include "Shader.h"
-#define STB_IMG_IMPLEMENTATION
-#include "stb_image.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include <std-master/stb_image.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
