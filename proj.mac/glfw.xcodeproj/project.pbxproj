@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9C3B6C9256F534C003EB295 /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6C4256F534C003EB295 /* cocoa_time.c */; };
+		E9C3B6CA256F534C003EB295 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6C5256F534C003EB295 /* cocoa_window.m */; };
+		E9C3B6CB256F534C003EB295 /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6C6256F534C003EB295 /* cocoa_joystick.m */; };
+		E9C3B6CC256F534C003EB295 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6C7256F534C003EB295 /* cocoa_init.m */; };
+		E9C3B6CD256F534C003EB295 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6C8256F534C003EB295 /* cocoa_monitor.m */; };
+		E9C3B6D9256F5379003EB295 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6CF256F5379003EB295 /* init.c */; };
+		E9C3B6DA256F5379003EB295 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D0256F5379003EB295 /* input.c */; };
+		E9C3B6DB256F5379003EB295 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D1256F5379003EB295 /* window.c */; };
+		E9C3B6DC256F5379003EB295 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D2256F5379003EB295 /* context.c */; };
+		E9C3B6DD256F5379003EB295 /* posix_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D3256F5379003EB295 /* posix_thread.c */; };
+		E9C3B6DE256F5379003EB295 /* osmesa_context.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D4256F5379003EB295 /* osmesa_context.c */; };
+		E9C3B6DF256F5379003EB295 /* vulkan.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D5256F5379003EB295 /* vulkan.c */; };
+		E9C3B6E0256F5379003EB295 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D6256F5379003EB295 /* nsgl_context.m */; };
+		E9C3B6E1256F5379003EB295 /* egl_context.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D7256F5379003EB295 /* egl_context.c */; };
+		E9C3B6E2256F5379003EB295 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B6D8256F5379003EB295 /* monitor.c */; };
+		E9C3B6ED256F53A8003EB295 /* posix_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E4256F53A8003EB295 /* posix_thread.h */; };
+		E9C3B6EE256F53A8003EB295 /* nsgl_context.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E5256F53A8003EB295 /* nsgl_context.h */; };
+		E9C3B6EF256F53A8003EB295 /* glfw_config.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E6256F53A8003EB295 /* glfw_config.h */; };
+		E9C3B6F0256F53A8003EB295 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E7256F53A8003EB295 /* internal.h */; };
+		E9C3B6F1256F53A8003EB295 /* egl_context.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E8256F53A8003EB295 /* egl_context.h */; };
+		E9C3B6F2256F53A8003EB295 /* cocoa_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6E9256F53A8003EB295 /* cocoa_platform.h */; };
+		E9C3B6F3256F53A8003EB295 /* mappings.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6EA256F53A8003EB295 /* mappings.h */; };
+		E9C3B6F4256F53A8003EB295 /* cocoa_joystick.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6EB256F53A8003EB295 /* cocoa_joystick.h */; };
+		E9C3B6F5256F53A8003EB295 /* osmesa_context.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6EC256F53A8003EB295 /* osmesa_context.h */; };
+		E9C3B701256F544B003EB295 /* glfw3native.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B6FF256F544A003EB295 /* glfw3native.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C3B702256F544B003EB295 /* glfw3.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B700256F544A003EB295 /* glfw3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9C3B692256F51DA003EB295 /* glfw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = glfw.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C3B6C4256F534C003EB295 /* cocoa_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cocoa_time.c; path = ../../glfw/src/cocoa_time.c; sourceTree = "<group>"; };
+		E9C3B6C5256F534C003EB295 /* cocoa_window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_window.m; path = ../../glfw/src/cocoa_window.m; sourceTree = "<group>"; };
+		E9C3B6C6256F534C003EB295 /* cocoa_joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_joystick.m; path = ../../glfw/src/cocoa_joystick.m; sourceTree = "<group>"; };
+		E9C3B6C7256F534C003EB295 /* cocoa_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_init.m; path = ../../glfw/src/cocoa_init.m; sourceTree = "<group>"; };
+		E9C3B6C8256F534C003EB295 /* cocoa_monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_monitor.m; path = ../../glfw/src/cocoa_monitor.m; sourceTree = "<group>"; };
+		E9C3B6CF256F5379003EB295 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = init.c; path = ../../glfw/src/init.c; sourceTree = "<group>"; };
+		E9C3B6D0256F5379003EB295 /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = input.c; path = ../../glfw/src/input.c; sourceTree = "<group>"; };
+		E9C3B6D1256F5379003EB295 /* window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = window.c; path = ../../glfw/src/window.c; sourceTree = "<group>"; };
+		E9C3B6D2256F5379003EB295 /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = context.c; path = ../../glfw/src/context.c; sourceTree = "<group>"; };
+		E9C3B6D3256F5379003EB295 /* posix_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = posix_thread.c; path = ../../glfw/src/posix_thread.c; sourceTree = "<group>"; };
+		E9C3B6D4256F5379003EB295 /* osmesa_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osmesa_context.c; path = ../../glfw/src/osmesa_context.c; sourceTree = "<group>"; };
+		E9C3B6D5256F5379003EB295 /* vulkan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vulkan.c; path = ../../glfw/src/vulkan.c; sourceTree = "<group>"; };
+		E9C3B6D6256F5379003EB295 /* nsgl_context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nsgl_context.m; path = ../../glfw/src/nsgl_context.m; sourceTree = "<group>"; };
+		E9C3B6D7256F5379003EB295 /* egl_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = egl_context.c; path = ../../glfw/src/egl_context.c; sourceTree = "<group>"; };
+		E9C3B6D8256F5379003EB295 /* monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = monitor.c; path = ../../glfw/src/monitor.c; sourceTree = "<group>"; };
+		E9C3B6E4256F53A8003EB295 /* posix_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posix_thread.h; path = ../glfw/src/posix_thread.h; sourceTree = "<group>"; };
+		E9C3B6E5256F53A8003EB295 /* nsgl_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nsgl_context.h; path = ../glfw/src/nsgl_context.h; sourceTree = "<group>"; };
+		E9C3B6E6256F53A8003EB295 /* glfw_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw_config.h; path = ../glfw/src/glfw_config.h; sourceTree = "<group>"; };
+		E9C3B6E7256F53A8003EB295 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = internal.h; path = ../glfw/src/internal.h; sourceTree = "<group>"; };
+		E9C3B6E8256F53A8003EB295 /* egl_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = egl_context.h; path = ../glfw/src/egl_context.h; sourceTree = "<group>"; };
+		E9C3B6E9256F53A8003EB295 /* cocoa_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocoa_platform.h; path = ../glfw/src/cocoa_platform.h; sourceTree = "<group>"; };
+		E9C3B6EA256F53A8003EB295 /* mappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mappings.h; path = ../glfw/src/mappings.h; sourceTree = "<group>"; };
+		E9C3B6EB256F53A8003EB295 /* cocoa_joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocoa_joystick.h; path = ../glfw/src/cocoa_joystick.h; sourceTree = "<group>"; };
+		E9C3B6EC256F53A8003EB295 /* osmesa_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = osmesa_context.h; path = ../glfw/src/osmesa_context.h; sourceTree = "<group>"; };
+		E9C3B6FF256F544A003EB295 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3native.h; path = ../glfw/include/GLFW/glfw3native.h; sourceTree = "<group>"; };
+		E9C3B700256F544A003EB295 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3.h; path = ../glfw/include/GLFW/glfw3.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C3B690256F51DA003EB295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9C3B689256F51DA003EB295 = {
+			isa = PBXGroup;
+			children = (
+				E9C3B69B256F522B003EB295 /* glfw */,
+				E9C3B693256F51DA003EB295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C3B693256F51DA003EB295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B692256F51DA003EB295 /* glfw.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C3B69B256F522B003EB295 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B69D256F523F003EB295 /* include */,
+				E9C3B69C256F5237003EB295 /* sources */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		E9C3B69C256F5237003EB295 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B6C7256F534C003EB295 /* cocoa_init.m */,
+				E9C3B6C6256F534C003EB295 /* cocoa_joystick.m */,
+				E9C3B6C8256F534C003EB295 /* cocoa_monitor.m */,
+				E9C3B6C4256F534C003EB295 /* cocoa_time.c */,
+				E9C3B6C5256F534C003EB295 /* cocoa_window.m */,
+				E9C3B6D2256F5379003EB295 /* context.c */,
+				E9C3B6D7256F5379003EB295 /* egl_context.c */,
+				E9C3B6CF256F5379003EB295 /* init.c */,
+				E9C3B6D0256F5379003EB295 /* input.c */,
+				E9C3B6D8256F5379003EB295 /* monitor.c */,
+				E9C3B6D6256F5379003EB295 /* nsgl_context.m */,
+				E9C3B6D4256F5379003EB295 /* osmesa_context.c */,
+				E9C3B6D3256F5379003EB295 /* posix_thread.c */,
+				E9C3B6D5256F5379003EB295 /* vulkan.c */,
+				E9C3B6D1256F5379003EB295 /* window.c */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		E9C3B69D256F523F003EB295 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B700256F544A003EB295 /* glfw3.h */,
+				E9C3B6FF256F544A003EB295 /* glfw3native.h */,
+				E9C3B6EB256F53A8003EB295 /* cocoa_joystick.h */,
+				E9C3B6E9256F53A8003EB295 /* cocoa_platform.h */,
+				E9C3B6E8256F53A8003EB295 /* egl_context.h */,
+				E9C3B6E6256F53A8003EB295 /* glfw_config.h */,
+				E9C3B6E7256F53A8003EB295 /* internal.h */,
+				E9C3B6EA256F53A8003EB295 /* mappings.h */,
+				E9C3B6E5256F53A8003EB295 /* nsgl_context.h */,
+				E9C3B6EC256F53A8003EB295 /* osmesa_context.h */,
+				E9C3B6E4256F53A8003EB295 /* posix_thread.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9C3B68E256F51DA003EB295 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3B701256F544B003EB295 /* glfw3native.h in Headers */,
+				E9C3B702256F544B003EB295 /* glfw3.h in Headers */,
+				E9C3B6F5256F53A8003EB295 /* osmesa_context.h in Headers */,
+				E9C3B6F4256F53A8003EB295 /* cocoa_joystick.h in Headers */,
+				E9C3B6F1256F53A8003EB295 /* egl_context.h in Headers */,
+				E9C3B6EE256F53A8003EB295 /* nsgl_context.h in Headers */,
+				E9C3B6F3256F53A8003EB295 /* mappings.h in Headers */,
+				E9C3B6EF256F53A8003EB295 /* glfw_config.h in Headers */,
+				E9C3B6ED256F53A8003EB295 /* posix_thread.h in Headers */,
+				E9C3B6F0256F53A8003EB295 /* internal.h in Headers */,
+				E9C3B6F2256F53A8003EB295 /* cocoa_platform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9C3B691256F51DA003EB295 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C3B696256F51DA003EB295 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				E9C3B68E256F51DA003EB295 /* Headers */,
+				E9C3B68F256F51DA003EB295 /* Sources */,
+				E9C3B690256F51DA003EB295 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = E9C3B692256F51DA003EB295 /* glfw.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C3B68A256F51DA003EB295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E9C3B691256F51DA003EB295 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E9C3B68D256F51DA003EB295 /* Build configuration list for PBXProject "glfw" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9C3B689256F51DA003EB295;
+			productRefGroup = E9C3B693256F51DA003EB295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C3B691256F51DA003EB295 /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C3B68F256F51DA003EB295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3B6DC256F5379003EB295 /* context.c in Sources */,
+				E9C3B6CB256F534C003EB295 /* cocoa_joystick.m in Sources */,
+				E9C3B6DB256F5379003EB295 /* window.c in Sources */,
+				E9C3B6DA256F5379003EB295 /* input.c in Sources */,
+				E9C3B6C9256F534C003EB295 /* cocoa_time.c in Sources */,
+				E9C3B6E0256F5379003EB295 /* nsgl_context.m in Sources */,
+				E9C3B6E1256F5379003EB295 /* egl_context.c in Sources */,
+				E9C3B6DE256F5379003EB295 /* osmesa_context.c in Sources */,
+				E9C3B6CA256F534C003EB295 /* cocoa_window.m in Sources */,
+				E9C3B6D9256F5379003EB295 /* init.c in Sources */,
+				E9C3B6DD256F5379003EB295 /* posix_thread.c in Sources */,
+				E9C3B6CC256F534C003EB295 /* cocoa_init.m in Sources */,
+				E9C3B6DF256F5379003EB295 /* vulkan.c in Sources */,
+				E9C3B6CD256F534C003EB295 /* cocoa_monitor.m in Sources */,
+				E9C3B6E2256F5379003EB295 /* monitor.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9C3B694256F51DA003EB295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)";
+			};
+			name = Debug;
+		};
+		E9C3B695256F51DA003EB295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)";
+			};
+			name = Release;
+		};
+		E9C3B697256F51DA003EB295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _GLFW_USE_CONFIG_H;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)";
+			};
+			name = Debug;
+		};
+		E9C3B698256F51DA003EB295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _GLFW_USE_CONFIG_H;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C3B68D256F51DA003EB295 /* Build configuration list for PBXProject "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3B694256F51DA003EB295 /* Debug */,
+				E9C3B695256F51DA003EB295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C3B696256F51DA003EB295 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3B697256F51DA003EB295 /* Debug */,
+				E9C3B698256F51DA003EB295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9C3B68A256F51DA003EB295 /* Project object */;
+}
