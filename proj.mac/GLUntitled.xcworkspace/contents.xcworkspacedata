@@ -10,4 +10,7 @@
    <FileRef
       location = "container:examples.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:exercise.xcodeproj">
+   </FileRef>
 </Workspace>

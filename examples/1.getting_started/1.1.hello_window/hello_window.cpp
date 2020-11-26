@@ -54,6 +54,7 @@ int main()
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
         glfwSwapBuffers(window);
+        // glfw: poll events 检查键盘鼠标等事件后回调
         glfwPollEvents();
     }
 

@@ -106,12 +106,15 @@ int main()
     }; 
 
     unsigned int VBO, VAO;
+    //生成
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     glBindVertexArray(VAO);
 
+    //绑定
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    //复制到缓冲区
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
