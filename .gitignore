@@ -1,5 +1,7 @@
-﻿book/
+book/
 #windows 忽略文件
 Debug
+*.build
+XCBuildData
 proj.win.sdf
 proj.win.opensdf
