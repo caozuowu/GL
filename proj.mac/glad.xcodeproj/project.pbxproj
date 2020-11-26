@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9C3B754256F589C003EB295 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B751256F589C003EB295 /* glad.c */; };
-		E9C3B75C256F5B6D003EB295 /* glad.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B759256F5B6C003EB295 /* glad.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9C3B75D256F5B6D003EB295 /* khrplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B75B256F5B6C003EB295 /* khrplatform.h */; };
+		E9C3B984256F7CB2003EB295 /* khrplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B97F256F7CB2003EB295 /* khrplatform.h */; };
+		E9C3B985256F7CB2003EB295 /* glad.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C3B981256F7CB2003EB295 /* glad.h */; };
+		E9C3B986256F7CB2003EB295 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = E9C3B983256F7CB2003EB295 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9C3B746256F5853003EB295 /* glad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = glad.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C3B751256F589C003EB295 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		E9C3B759256F5B6C003EB295 /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
-		E9C3B75B256F5B6C003EB295 /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
+		E9C3B97F256F7CB2003EB295 /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
+		E9C3B981256F7CB2003EB295 /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
+		E9C3B983256F7CB2003EB295 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 		E9C3B73D256F5853003EB295 = {
 			isa = PBXGroup;
 			children = (
-				E9C3B74F256F5885003EB295 /* glad */,
+				E9C3B97C256F7CB2003EB295 /* glad */,
 				E9C3B747256F5853003EB295 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,40 +46,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9C3B74F256F5885003EB295 /* glad */ = {
+		E9C3B97C256F7CB2003EB295 /* glad */ = {
 			isa = PBXGroup;
 			children = (
-				E9C3B758256F5B6C003EB295 /* include */,
-				E9C3B750256F589C003EB295 /* src */,
+				E9C3B97D256F7CB2003EB295 /* include */,
+				E9C3B982256F7CB2003EB295 /* src */,
 			);
 			name = glad;
+			path = ../glad;
 			sourceTree = "<group>";
 		};
-		E9C3B750256F589C003EB295 /* src */ = {
+		E9C3B97D256F7CB2003EB295 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				E9C3B751256F589C003EB295 /* glad.c */,
+				E9C3B97E256F7CB2003EB295 /* KHR */,
+				E9C3B980256F7CB2003EB295 /* glad */,
 			);
-			name = src;
-			path = ../glad/src;
+			path = include;
 			sourceTree = "<group>";
 		};
-		E9C3B758256F5B6C003EB295 /* include */ = {
+		E9C3B97E256F7CB2003EB295 /* KHR */ = {
 			isa = PBXGroup;
 			children = (
-				E9C3B759256F5B6C003EB295 /* glad.h */,
-				E9C3B75A256F5B6C003EB295 /* KHR */,
-			);
-			name = include;
-			path = ../glad/include;
-			sourceTree = "<group>";
-		};
-		E9C3B75A256F5B6C003EB295 /* KHR */ = {
-			isa = PBXGroup;
-			children = (
-				E9C3B75B256F5B6C003EB295 /* khrplatform.h */,
+				E9C3B97F256F7CB2003EB295 /* khrplatform.h */,
 			);
 			path = KHR;
+			sourceTree = "<group>";
+		};
+		E9C3B980256F7CB2003EB295 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B981256F7CB2003EB295 /* glad.h */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		E9C3B982256F7CB2003EB295 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3B983256F7CB2003EB295 /* glad.c */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,8 +96,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C3B75C256F5B6D003EB295 /* glad.h in Headers */,
-				E9C3B75D256F5B6D003EB295 /* khrplatform.h in Headers */,
+				E9C3B985256F7CB2003EB295 /* glad.h in Headers */,
+				E9C3B984256F7CB2003EB295 /* khrplatform.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C3B754256F589C003EB295 /* glad.c in Sources */,
+				E9C3B986256F7CB2003EB295 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
