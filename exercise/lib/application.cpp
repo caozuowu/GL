@@ -20,7 +20,7 @@ Application::Application(int gl_version_major, int gl_version_minor) {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-#ifndef __APPLE__
+#indef __USE_GLAD__
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;

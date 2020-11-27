@@ -11,6 +11,7 @@
 class EXWD : public exlib::WindowDelegate {
     
 public:
+    
     EXWD(){
         
     }

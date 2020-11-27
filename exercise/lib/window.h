@@ -22,6 +22,7 @@ namespace exlib {
     };
 
     class Window {
+        
     public:
         Window(float width, float height, const char * title);
         ~Window();
