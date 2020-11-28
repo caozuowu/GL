@@ -40,8 +40,11 @@
 /* #undef _GLFW_WIN32 */
 // Define this to 1 if building GLFW for Cocoa
 #ifdef __APPLE__
-    #define _GLFW_COCOA
+#	define _GLFW_COCOA
+#elif WIN32
+#	define _GLFW_WIN32
 #endif
+
 
 // Define this to 1 if building GLFW for Wayland
 /* #undef _GLFW_WAYLAND */
