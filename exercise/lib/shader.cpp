@@ -1,26 +1,61 @@
 //
 //  shader.cpp
-//  exercise
+//  exlib
 //
-//  Created by zuowu on 2020/11/27.
+//  Created by zuowu on 2020/11/30.
 //
 
 #include "shader.h"
-#ifdef __APPLE__
 #include <OpenGL/gl3.h>
-#endif
+
 
 using namespace exlib;
 
-Shader::Shader(){
+ShadProgram::ShadProgram() {
+    _index = glCreateProgram();
+}
+
+void ShadProgram::attachShader(Shader * shader) {
+    glAttachShader(_index, shader->getIndex());
+}
+
+void ShadProgram::link() {
     
+    glLinkProgram(_index);
+    
+    int success;
+    char infoLog[512];
+    glGetProgramiv(_index, GL_LINK_STATUS, &success);
+    if (!success) {
+        glGetProgramInfoLog(_index, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+    }
 }
 
-Shader::Shader(int type, char ** string) {
+void ShadProgram::use() {
+    glUseProgram(_index);
+}
+
+Shader::Shader(int type, const char * source) {
+    
     _index = glCreateShader(type);
+    glShaderSource(_index, 1, &source, nullptr);
+    glCompileShader(_index);
+    
+    int success;
+    char infoLog[512];
+    glGetShaderiv(_index, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(_index, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
 }
 
-Shader::~Shader(){
+Shader::~Shader() {
     glDeleteShader(_index);
-    _string = NULL;
+}
+
+int Shader::getIndex() {
+    return _index;
 }

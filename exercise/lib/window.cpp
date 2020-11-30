@@ -1,61 +1,95 @@
 //
-//  window.c
+//  window.cpp
 //  exlib
 //
-//  Created by zuowu on 2020/11/27.
+//  Created by zuowu on 2020/11/30.
 //
 
 #include "window.h"
-#include <iostream>
+#include "application.h"
+#include <GLUT/GLUT.h>
+#include <map>
 
 using namespace exlib;
 
-static std::map<GLFWwindow *, Window *> windowMap;
+static std::map<Window * , int> windowMap;
 
-Window::Window(float width, float height, const char * title){
-        
-    _window = glfwCreateWindow(width, height, title, NULL, NULL);
-    if (_window == NULL) {
-        std::cout << "Failed to create GLFW window" << std::endl;
-//        glfwTerminate();
-    }
-    glfwMakeContextCurrent(_window);
-    glfwSetFramebufferSizeCallback(_window, Window::framebuffer_size_callback);
-    
-    windowMap[_window] = this;
-
+void Display(){
+    Application::getApplicationInstance()->currentWindow()->onDisplay();
 }
-
-Window::~Window(){
+void Reshape(int width, int height){
+    Application::getApplicationInstance()->currentWindow()->onReshape(width, height);
+}
+void Keyboard(unsigned char key, int x, int y){
+    Application::getApplicationInstance()->currentWindow()->onKeyboard(key, x, y);
+}
+void Mouse(int button, int state, int x, int y){
+    Application::getApplicationInstance()->currentWindow()->onMouse(button, state, x, y);
+}
+void Idle(){
     
 }
-
-Window * Window::careteWindow(float width, float height, const char * title){
-    Window * ref = new Window(width, height, title);
-    return ref;
-}
-
-void Window::mainLoop() {
+void Dials(int dial, int value){
     
-    while (!glfwWindowShouldClose(_window)) {
-        
-        if (glfwGetKey(_window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-                glfwSetWindowShouldClose(_window, true);
-        
-        if (delegate)
-            delegate->windowRenderFunction();
-        
-        glfwSwapBuffers(_window);
-        glfwPollEvents();
-    }
+}
+void WindowStatus(int state){
     
-    if (delegate)
-        delegate->windowCloseFunction();
 }
 
-void Window::framebuffer_size_callback(GLFWwindow *window, int width, int height) {
-    Window * w = (Window *)windowMap[window];
-    if (w && w->delegate) {
-        w->delegate->windowChangeSizeFunction();
-    }
+Window::Window(int x, int y, int w, int h) {
+    
+    _width = 800;
+    _height = 600;
+    _pos_x = 0;
+    _pos_y = 0;
+    
+    glutInitWindowSize(_width, _height);
+    glutInitWindowPosition(_pos_x, _pos_y);
+    _index = glutCreateWindow("default title");
+    windowMap[this] = _index;
+    glutSetWindow(_index);
+    
+    glutDisplayFunc(Display);
+    glutReshapeFunc(Reshape);
+    glutKeyboardFunc(Keyboard);
+    glutMouseFunc(Mouse);
+    glutIdleFunc(Idle);
+    glutWindowStatusFunc(WindowStatus);
+    glutDialsFunc(Dials);
+
 }
+
+void Window::setTitle(const char *title) {
+    _title = title;
+    glutSetWindow(_index);
+    glutSetWindowTitle(title);
+}
+
+Window::~Window() {
+    glutGet(GLUT_WINDOW_STEREO);
+    glutDestroyWindow(_index);
+}
+
+void Window::onDisplay(){
+   
+}
+void Window::onReshape(int width, int height){
+    glViewport(0, 0, (GLsizei)width, (GLsizei)height);
+}
+void Window::onKeyboard(unsigned char key, int x, int y){
+    
+}
+void Window::onMouse(int button, int state, int x, int y){
+    
+}
+void Window::onWindowStatus(int state){
+    
+}
+void Window::onDials(int dial, int value){
+    
+}
+void Window::onIdle(){
+    
+}
+
+

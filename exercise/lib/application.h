@@ -2,7 +2,7 @@
 //  application.h
 //  exlib
 //
-//  Created by zuowu on 2020/11/27.
+//  Created by zuowu on 2020/11/30.
 //
 
 #ifndef application_h
@@ -11,25 +11,37 @@
 #include <stdio.h>
 #include "window.h"
 
+
+
 namespace exlib {
 
-    struct glVersion {
-        int major;
-        int minor;
-    };
+class Application;
+class ApplicationDelegate;
 
-    class Application {
-    public:
-        Application(int gl_version_major, int gl_version_minor);
-        ~Application();
-   
-         Window * window;
-        
-    private:
-        glVersion version;
-    };
+int ApplicationMain(int argc, char **  argv, ApplicationDelegate * delegate, Window * mainWindow);
+
+class ApplicationDelegate {
+public:
+    virtual void onApplicationCreate(Application * app) = 0;
+    virtual void onApplicationDestory() = 0;
+};
+
+class Application {
+public:
+    static Application * getApplicationInstance();
+    Application(int argc, char ** argv, ApplicationDelegate * delegate, Window * mainWindow);
+    
+    Window * currentWindow();
+    
+    void mainLoop();
+private:
+    Window * _currentWindow;
+    ApplicationDelegate * _delegate;
+
+};
+
+
+
 }
-
-
 
 #endif /* application_h */

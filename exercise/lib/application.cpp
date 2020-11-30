@@ -1,36 +1,40 @@
 //
-//  application.c
+//  application.cpp
 //  exlib
 //
-//  Created by zuowu on 2020/11/27.
+//  Created by zuowu on 2020/11/30.
 //
 
 #include "application.h"
+#include <GLUT/GLUT.h>
 
 using namespace exlib;
 
-Application::Application(int gl_version_major, int gl_version_minor) {
-    
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, gl_version_major);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, gl_version_minor);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-#endif
-    
-#indef __USE_GLAD__
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
-#endif
-    
-    window = new Window(800, 600, "");
+Application * instance = nullptr;
 
+int exlib::ApplicationMain(int argc, char **  argv, ApplicationDelegate * delegate,  Window * mainWindow) {
+    instance = new Application(argc, argv, delegate, mainWindow);
+    instance->mainLoop();
+    return 0;
 }
 
-Application::~Application(){
-    
+Application * Application::getApplicationInstance() {
+    return instance;
 }
+
+Application::Application(int argc, char **argv, ApplicationDelegate * delegate, Window * mainWindow){
+    _delegate = delegate;
+    _currentWindow = mainWindow;
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH);
+}
+
+
+Window * Application::currentWindow() {
+    return _currentWindow;
+}
+
+void Application::mainLoop(){
+    glutMainLoop();
+}
+

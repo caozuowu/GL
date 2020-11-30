@@ -2,44 +2,54 @@
 //  window.h
 //  exlib
 //
-//  Created by zuowu on 2020/11/27.
+//  Created by zuowu on 2020/11/30.
 //
 
 #ifndef window_h
 #define window_h
 
 #include <stdio.h>
-#include <map>
-#include <GLFW/glfw3.h>
 
 namespace exlib {
 
-    class WindowDelegate {
-    public:
-        virtual void windowRenderFunction() = 0;
-        virtual void windowCloseFunction() = 0;
-        virtual void windowChangeSizeFunction() = 0;
-    };
+class Window;
+class WindowDelegate;
 
-    class Window {
-        
-    public:
-        Window(float width, float height, const char * title);
-        ~Window();
-        static Window * careteWindow(float width, float height, const char * title);
-        void mainLoop();
-        
-        WindowDelegate * delegate;
-    private:
-        float width;
-        float height;
-        GLFWwindow * _window;
-        
-        static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-        
-    };
+class WindowDelegate {
+    virtual void onWindowCreate() = 0;
+};
+
+class Window {
+    
+public:
+    
+    Window(int x, int y, int w, int h);
+    ~Window();
+    void setTitle(const char * title);
+    
+    virtual void onDisplay();
+    virtual void onReshape(int width, int height);
+    virtual void onKeyboard(unsigned char key, int x, int y);
+    virtual void onMouse(int button, int state, int x, int y);
+    virtual void onIdle();
+    virtual void onDials(int dial, int value);
+    virtual void onWindowStatus(int state);
+private:
+    
+    int _index;
+    
+    int _width;
+    int _height;
+    int _pos_x;
+    int _pos_y;
+    
+    const char * _title;
+    
+
+    
+};
+
 }
-
 
 
 #endif /* window_h */
