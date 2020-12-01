@@ -104,14 +104,14 @@
 		E97CC5102570A96800CEB081 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				E902C77B2574DAAF00D875BC /* application.cpp */,
 				E902C77C2574DAAF00D875BC /* application.h */,
-				E902C7742574DAA400D875BC /* window.cpp */,
+				E902C77B2574DAAF00D875BC /* application.cpp */,
 				E902C7752574DAA400D875BC /* window.h */,
-				E902C7972574E61C00D875BC /* shader.cpp */,
+				E902C7742574DAA400D875BC /* window.cpp */,
 				E902C7982574E61C00D875BC /* shader.h */,
-				E902C7BE2574F24000D875BC /* shape.cpp */,
+				E902C7972574E61C00D875BC /* shader.cpp */,
 				E902C7B92574F23100D875BC /* shape.h */,
+				E902C7BE2574F24000D875BC /* shape.cpp */,
 				E902C7A12574EB1400D875BC /* exlib.h */,
 			);
 			path = lib;

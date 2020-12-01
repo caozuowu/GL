@@ -6,39 +6,55 @@
 //
 
 #include "shape.h"
+#include <iostream>
 
 using namespace exlib;
 
-Shape::Shape(const float * vertices, int * indices) {
+Shape::Shape(float * vertices, int size_vertices, unsigned int * indices, int size_indices) {
     
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    
-    glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    
-//    glGenBuffers(1, &EBO);
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    _index = 1;
+
+    setVAO(vertices, size_vertices);
+    setEBO(indices, size_indices);
     
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-//    glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
-    
+
 }
 
-void Shape::draw(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices) {
+void Shape::setVAO(float * vertices, int size_vertices) {
+    glGenVertexArrays(_index, &VAO);
+    glGenBuffers(_index, &VBO);
+
     glBindVertexArray(VAO);
-//    glDrawElements(mode, count, type, indices);
-    glDrawArrays(mode, 0, 3);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+
+    glBufferData(GL_ARRAY_BUFFER, size_vertices, vertices, GL_STATIC_DRAW);
+
 }
 
+void Shape::setEBO(unsigned int *indices , int size_indices) {
+    if (indices != NULL && size_indices) {
+        glGenBuffers(_index, &EBO);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, size_indices, indices, GL_STATIC_DRAW);
+    }
+}
+
+void Shape::drawElement(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices) {
+    glBindVertexArray(VAO);
+    glDrawElements(mode, count, type, indices);
+}
+
+void Shape::drawArray(GLenum mode, GLint first, GLsizei count) {
+    glBindVertexArray(VAO);
+    glDrawArrays(mode, first, count);
+}
 
 Shape::~Shape() {
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    glDeleteBuffers(1, &EBO);
+    glDeleteVertexArrays(_index, &VAO);
+    glDeleteBuffers(_index, &VBO);
+    glDeleteBuffers(_index, &EBO);
 }

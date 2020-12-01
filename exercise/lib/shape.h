@@ -16,15 +16,21 @@ class Shape {
     
 
 public:
-    Shape(const float * vertices, int * indices);
+    
+    Shape(float * vertices, int size_vertices, unsigned int * indices, int size_indices);
     ~Shape();
     
-    void draw(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices);
+    void setVAO(float * vertices, int size_vertices);
+    void setEBO(unsigned int * indices, int size_indices);
+    
+    void drawElement(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices);
+    void drawArray(GLenum mode, GLint first, GLsizei count);
     unsigned int VAO;
     unsigned int VBO;
     unsigned int EBO;
     
 private:
+    int _index;
 //    float * vertices;
 //    int * indices;
     
