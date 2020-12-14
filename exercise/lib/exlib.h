@@ -8,10 +8,7 @@
 #ifndef exllib_h
 #define exllib_h
 
-#include "application.h"
-#include "window.h"
 #include "shader.h"
-#include "shape.h"
 
 
 #endif /* exllib_h */

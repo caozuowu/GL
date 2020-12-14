@@ -39,65 +39,95 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FD5CC221-2AE6-458E-A34C-9FB80EF98CDD"
+            uuid = "A3321367-7614-4BA6-BDA9-9ADB2E5C64AD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../exercise/lib/window.cpp"
+            filePath = "../exercise/lib/shader.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "Display()"
-            landmarkType = "9">
+            startingLineNumber = "52"
+            endingLineNumber = "52">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "50EA6710-D503-4A64-BA3A-C0CF7825DEA1"
+            uuid = "14CE0208-A928-4F47-A217-297F719CE5E3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../exercise/lib/window.cpp"
+            filePath = "../exercise/lib/shader.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "Reshape(width, height)"
-            landmarkType = "9">
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "ShaderProgram::ShaderProgram(shader)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "14CE0208-A928-4F47-A217-297F719CE5E3 - 1e1748e3fb94de08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "exlib::ShaderProgram::ShaderProgram(exlib::Shader, ...)"
+                  moduleName = "execrise_1.3.1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuowu/Desktop/GL/exercise/lib/shader.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "14CE0208-A928-4F47-A217-297F719CE5E3 - 1e1748e3fb94de08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "exlib::ShaderProgram::ShaderProgram(exlib::Shader, ...)"
+                  moduleName = "execrise_1.3.1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuowu/Desktop/GL/exercise/lib/shader.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B6622721-2F6C-4E9E-967E-3E534E5706D6"
+            uuid = "010E4905-9180-4049-A4A3-EE990954E79C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../exercise/lib/window.cpp"
+            filePath = "../exercise/lib/shader.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "Keyboard(key, x, y)"
-            landmarkType = "9">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "Shader::Shader(type, str)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E71E9414-601D-4F2D-8D66-0B61C0DDFCAC"
+            uuid = "4DB599B6-8B8A-456A-A109-5F3854E98A7B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../exercise/lib/window.cpp"
+            filePath = "../exercise/lib/shader.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "Mouse(button, state, x, y)"
-            landmarkType = "9">
+            landmarkName = "Shader::Shader(type, str)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -2,7 +2,7 @@
 //  shader.h
 //  exlib
 //
-//  Created by zuowu on 2020/11/30.
+//  Created by zuowu on 2020/12/2.
 //
 
 #ifndef shader_h
@@ -13,25 +13,20 @@
 namespace exlib {
 
 class Shader;
-class ShadProgram;
-
-class ShadProgram {
-public:
-    ShadProgram();
-    void attachShader(Shader * shader);
-    void link();
-    void use();
-private:
-    int _index;
-};
+class ShaderProgram;
 
 class Shader {
 public:
-    Shader(int type, const char * source);
+    Shader(int type, std::string str);
     ~Shader();
-    int getIndex();
 private:
-    int _index;
+    int _gl_index;
+    
+};
+
+class ShaderProgram {
+public:
+    ShaderProgram(Shader shader, ...);
 };
 
 }
