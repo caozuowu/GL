@@ -9,6 +9,8 @@
 #define shader_h
 
 #include <iostream>
+#include <vector> 
+using namespace std;
 
 namespace exlib {
 
@@ -19,6 +21,8 @@ class Shader {
 public:
     Shader(int type, std::string str);
     ~Shader();
+    
+    int index();
 private:
     int _gl_index;
     
@@ -26,7 +30,12 @@ private:
 
 class ShaderProgram {
 public:
-    ShaderProgram(Shader shader, ...);
+    void attachShader(Shader shader);
+    ShaderProgram(vector<Shader> shaders);
+    void use();
+private:
+    int _gl_index;
+    vector<Shader> _shaders;
 };
 
 }

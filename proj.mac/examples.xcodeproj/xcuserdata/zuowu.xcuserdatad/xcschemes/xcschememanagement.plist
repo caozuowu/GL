@@ -22,7 +22,7 @@
 		<key>1.2.hello_window_clear .xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
 		<key>2.1.hello_triangle copy.xcscheme_^#shared#^_</key>
 		<dict>
@@ -32,7 +32,7 @@
 		<key>2.1.hello_triangle.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 		<key>2.1.hello_triangle_indexed copy.xcscheme_^#shared#^_</key>
 		<dict>
@@ -42,7 +42,7 @@
 		<key>2.1.hello_triangle_indexed.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>examples.xcscheme_^#shared#^_</key>
 		<dict>

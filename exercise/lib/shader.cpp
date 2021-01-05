@@ -45,6 +45,33 @@ Shader::~Shader() {
     glDeleteShader(_gl_index);
 }
 
-ShaderProgram::ShaderProgram(Shader shader, ...) {
-    
+int Shader::index() {
+    return _gl_index;
 }
+
+void ShaderProgram::attachShader(Shader shader) {
+    glAttachShader(_gl_index, shader.index());
+}
+
+ShaderProgram::ShaderProgram(vector<Shader> a){
+    _gl_index = glCreateProgram();
+//    attachShader(<#Shader shader#>)
+//    _shaders = vector(&a);
+    glLinkProgram(_gl_index);
+    
+    int success;
+    char infoLog[512];
+    glGetProgramiv(_gl_index, GL_LINK_STATUS, &success);
+    if(!success)
+    {
+        glGetProgramInfoLog(_gl_index, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+    }
+    
+    //    glDeleteShader(<#GLuint shader#>)
+}
+
+void ShaderProgram::use(){
+    glUseProgram(_gl_index);
+}
+

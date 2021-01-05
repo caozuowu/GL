@@ -92,7 +92,7 @@ int main(int argc, char ** argv) {
     
     
 //    Shape * shape = new Shape(vertices, sizeof(vertices), indices, sizeof(indices));
-    
+
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
