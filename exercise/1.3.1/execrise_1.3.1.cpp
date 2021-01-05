@@ -21,6 +21,7 @@ public:
     void onClose() override {
         std::cout<<"EXWin on close"<<std::endl;
         exit(0);
+        
     }
     
     void onDisplay() override {

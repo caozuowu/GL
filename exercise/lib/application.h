@@ -22,8 +22,10 @@ public:
         
     static Application * getInstance();
     void initGlutFunc();
+    void setFPS(int fps);
     void mainLoop();
     
+    Window * getWindow(int index);
     WindowChain * getWindowChain();
     
 private:
@@ -33,6 +35,8 @@ private:
     Window * _mainWindow;
     
     WindowChain * _windowChain;
+    
+    int _FPS;
 
 };
 
