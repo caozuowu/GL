@@ -53,6 +53,10 @@ Window * Application::getWindow(int index) {
     return _windowChain->getWindow(index);
 }
 
+void Application::addWindow() {
+    Window * w = new Window("", rect{point{0,0}, size{500,500}});
+}
+
 Application:: Application(int argc, char ** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);

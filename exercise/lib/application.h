@@ -26,6 +26,8 @@ public:
     void setFPS(int fps);
     void mainLoop();
     
+    void addWindow();
+    
     Window * getWindow(int index);
     WindowChain * getWindowChain();
     
