@@ -30,8 +30,9 @@ private:
 
 class ShaderProgram {
 public:
-    void attachShader(Shader shader);
-    ShaderProgram(vector<Shader> shaders);
+    void attachShader(Shader * p, ...);
+    ShaderProgram();
+    ShaderProgram(Shader * p, ...);
     void use();
 private:
     int _gl_index;

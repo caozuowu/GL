@@ -21,6 +21,13 @@ public:
     ~Window();
     
     Window * init();
+    Window * init(bool show);
+    virtual void onInit();
+    
+    Window * show();
+    virtual Window * onShow();
+    Window * hide();
+    virtual Window * onHide();
     void display();
     
     Window * prev;
@@ -30,6 +37,7 @@ public:
     
     virtual void onClose();
     virtual void onDisplay();
+    virtual void onRehsape(int width, int height);
     
 private:
     

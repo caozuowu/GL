@@ -27,6 +27,12 @@ void APP_GLUT_WMCLOSE_FUNC() {
     
 }
 
+void APP_GLUT_RESHAPE_FUNC(int width, int height) {
+    int index = glutGetWindow();
+    Window * w = Application::getInstance()->getWindow(index);
+    w->onRehsape(width, height);
+}
+
 static Application * _s_instance = NULL;
 
 int exlib::ApplicationMain(int argc, char ** argv, Window * window) {
@@ -61,6 +67,7 @@ void Application::setFPS(int fps) {
 void Application::initGlutFunc() {
     glutDisplayFunc(APP_GLUT_DISPLAY_FUNC);
     glutWMCloseFunc(APP_GLUT_WMCLOSE_FUNC);
+    glutReshapeFunc(APP_GLUT_RESHAPE_FUNC);
 }
 
 WindowChain * Application::getWindowChain(){
@@ -69,11 +76,13 @@ WindowChain * Application::getWindowChain(){
 
 void Application::mainLoop() {
     glutMainLoop();
-    float cyclelength = 1.0f/(float)_FPS * 1000;
+//    float cyclelength = 1.0f/(float)_FPS * 1000;
     
     
-    struct timeval tv;
-    gettimeofday(&tv, NULL);
-    int64_t start = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+//    struct timeval tv;
+//    gettimeofday(&tv, NULL);
+//    int64_t start = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+    
+//    nanosleep(<#const struct timespec *__rqtp#>, <#struct timespec *__rmtp#>)
     
 }

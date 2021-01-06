@@ -49,14 +49,24 @@ int Shader::index() {
     return _gl_index;
 }
 
-void ShaderProgram::attachShader(Shader shader) {
-    glAttachShader(_gl_index, shader.index());
+void ShaderProgram::attachShader(Shader * shader, ...) {
+    
+    va_list args;
+    va_start(args, shader);
+
+    while (true) {
+        Shader * s = va_arg(args, Shader *);
+        if (!s) {
+            break;
+        }
+        glAttachShader(_gl_index, s->index());
+    }
+    
 }
 
-ShaderProgram::ShaderProgram(vector<Shader> a){
+ShaderProgram::ShaderProgram(){
+    
     _gl_index = glCreateProgram();
-//    attachShader(<#Shader shader#>)
-//    _shaders = vector(&a);
     glLinkProgram(_gl_index);
     
     int success;
@@ -69,6 +79,23 @@ ShaderProgram::ShaderProgram(vector<Shader> a){
     }
     
     //    glDeleteShader(<#GLuint shader#>)
+}
+ShaderProgram::ShaderProgram(Shader * p, ...){
+    
+    ShaderProgram();
+    
+    va_list args;
+    va_start(args, p);
+
+    while (true) {
+        Shader * s = va_arg(args, Shader *);
+        if (!s) {
+            break;
+        }
+        glAttachShader(_gl_index, s->index());
+    }
+  
+    va_end(args);
 }
 
 void ShaderProgram::use(){

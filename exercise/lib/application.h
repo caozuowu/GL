@@ -9,6 +9,7 @@
 #define application_h
 
 #include "window.h"
+#include <thread>
 
 namespace exlib {
 
@@ -38,6 +39,23 @@ private:
     
     int _FPS;
 
+};
+
+//typedef struct{
+//    int threadid;
+//    void callback();
+////    LoopThread();
+//}LoopThread;
+
+class LoopThread {
+public:
+    LoopThread(){
+//        std::thread t(1,1);
+        _thread = std::thread();
+        _thread.get_id();
+    }
+    std::thread _thread;
+    void loopThreadFunc();
 };
 
 

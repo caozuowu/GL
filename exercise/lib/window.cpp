@@ -24,6 +24,53 @@ Window * Window::init() {
     glutInitWindowPosition(_rect.point.x, _rect.point.y);
     glutInitWindowSize(_rect.size.w, _rect.size.h);
     _glut_index = glutCreateWindow(_title.c_str());
+    onInit();
+    return this;
+}
+
+Window * Window::init(bool show) {
+    
+    glutInitWindowPosition(_rect.point.x, _rect.point.y);
+    glutInitWindowSize(_rect.size.w, _rect.size.h);
+    _glut_index = glutCreateWindow(_title.c_str());
+    
+    if (!show) {
+        int temp = glutGetWindow();
+        glutSetWindow(_glut_index);
+        glutHideWindow();
+        glutSetWindow(temp);
+    }
+    onInit();
+    return this;
+}
+
+void Window::onInit(){
+
+}
+
+Window * Window::show(){
+    int temp = glutGetWindow();
+    glutSetWindow(_glut_index);
+    glutShowWindow();
+    glutSetWindow(temp);
+    onShow();
+    return this;
+}
+
+Window * Window::onShow() {
+    return this;
+}
+
+Window * Window::hide(){
+    int temp = glutGetWindow();
+    glutSetWindow(_glut_index);
+    glutHideWindow();
+    glutSetWindow(temp);
+    onHide();
+    return this;
+}
+
+Window * Window::onHide(){
     return this;
 }
 
@@ -41,6 +88,10 @@ void Window::onClose() {
 
 void Window::onDisplay(){
     std::cout<<"onDisplay"<<std::endl;
+}
+
+void Window::onRehsape(int width, int height) {
+    
 }
 
 WindowChain::WindowChain() {
